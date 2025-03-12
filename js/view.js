@@ -46,8 +46,8 @@ function drawScoreboard() {
 	} else if (gameState != 0 && textOpacity > 0) {
 		textOpacity -= 0.05;
 		renderText(trueCanvas.width / 2 + gdx + 6 * settings.scale, trueCanvas.height / 2 + gdy, 60, "rgb(236, 240, 241)", String.fromCharCode("0xf04b"), 'px FontAwesome');
-		renderText(trueCanvas.width / 2 + gdx + 6 * settings.scale, trueCanvas.height / 2 + gdy - 155 * settings.scale, 150, "#2c3e50", "Hextris");
-		renderText(trueCanvas.width / 2 + gdx + 5 * settings.scale, h, fontSize, "rgb(44,62,80)", 'Play!');
+		renderText(trueCanvas.width / 2 + gdx + 6 * settings.scale, trueCanvas.height / 2 + gdy - 155 * settings.scale, 150, "#2c3e50", "HexConso");
+		renderText(trueCanvas.width / 2 + gdx + 5 * settings.scale, h, fontSize, "rgb(44,62,80)", 'Empezar!');
 		ctx.globalAlpha = scoreOpacity;
 		renderText(trueCanvas.width / 2 + gdx, trueCanvas.height / 2 + gdy, scoreSize, color, score);
 	} else {
@@ -95,11 +95,11 @@ function toggleClass(element, active) {
 
 function showText(text) {
 	var messages = {
-		'paused': "<div class='centeredHeader unselectable'>Game Paused</div>",
-		'pausedAndroid': "<div class='centeredHeader unselectable'>Game Paused</div><div class='unselectable centeredSubHeader' style='position:absolute;margin-left:-150px;left:50%;margin-top:20px;width:300px;font-size:16px;'></div>",
-		'pausediOS': "<div class='centeredHeader unselectable'>Game Paused</div><div class='unselectable centeredSubHeader' style='position:absolute;margin-left:-150px;left:50%;margin-top:20px;width:300px;font-size:16px;'></div>",
-		'pausedOther': "<div class='centeredHeader unselectable'>Game Paused</div><div class='unselectable centeredSubHeader' style='margin-top:10px;position:absolute;left:50%;margin-left:-190px;max-width:380px;font-size:18px;'></div>",
-		'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Press enter to start</div>"
+		'paused': "<div class='centeredHeader unselectable'>Pausa consolata</div>",
+		'pausedAndroid': "<div class='centeredHeader unselectable'>Pausa Consolata</div><div class='unselectable centeredSubHeader' style='position:absolute;margin-left:-150px;left:50%;margin-top:20px;width:300px;font-size:16px;'></div>",
+		'pausediOS': "<div class='centeredHeader unselectable'>Pausa Consolata</div><div class='unselectable centeredSubHeader' style='position:absolute;margin-left:-150px;left:50%;margin-top:20px;width:300px;font-size:16px;'></div>",
+		'pausedOther': "<div class='centeredHeader unselectable'>Pausa Consolata</div><div class='unselectable centeredSubHeader' style='margin-top:10px;position:absolute;left:50%;margin-left:-190px;max-width:380px;font-size:18px;'></div>",
+		'start': "<div class='centeredHeader unselectable' style='line-height:80px;'>Toqué para empezar</div>"
 	};
 
 	if (text == 'paused') {
